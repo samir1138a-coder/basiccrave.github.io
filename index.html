@@ -1,27 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Basic Crave Pvt. Ltd.</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic Crave Pvt. Ltd.</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Basic Crave Pvt. Ltd.</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Products</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <section class="hero">
-    <h2>What You NEED</h2>
-    <p>Basic Crave Pvt. Ltd. is a Bangladesh-based buying house with a regional hub in Malaysia, dedicated to making garment sourcing simple, and reliable. We link global brands to vetted Bangladeshi factories, oversee production and quality at every stage.</p>
-  </section>
-  <footer>
-    <p>© 2025 Basic Crave Pvt. Ltd. | www.basiccrave.com</p>
-  </footer>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#whyus">Why Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="fade-in">
+  <h1>Basic Crave Pvt. Ltd.</h1>
+  <p>Bangladesh-based buying house with a regional hub in Malaysia — making garment sourcing simple, reliable, and transparent.</p>
+  <a href="#contact" class="btn">Get in Touch</a>
+</section>
+
+<section id="about" class="fade-in">
+  <h2>About Us</h2>
+  <p>Basic Crave Pvt. Ltd. links global brands to vetted Bangladeshi factories, overseeing production and quality at every stage. With transparent communication and startup-friendly guidance, we turn sourcing challenges into growth opportunities.</p>
+</section>
+
+<section id="services" class="fade-in">
+  <h2>Our Services</h2>
+  <ul>
+    <li>End-to-End Expertise — From fabric sourcing to final shipment</li>
+    <li>Reliable Quality — Strict quality control and vetted manufacturers</li>
+    <li>Transparent Communication — Clear updates, no surprises</li>
+  </ul>
+</section>
+
+<section id="whyus" class="fade-in">
+  <h2>Why Choose Us</h2>
+  <ul>
+    <li>Startup-Friendly Approach — We help brands scale confidently</li>
+    <li>Global Reach, Local Strength — Offices in Bangladesh & Malaysia</li>
+    <li>Hands-On Production Oversight — Quality and timelines guaranteed</li>
+    <li>Trusted Factory Network — Reliable and compliant partners</li>
+    <li>Clear Communication — Honest insights and proactive solutions</li>
+  </ul>
+</section>
+
+<section id="contact" class="fade-in">
+  <h2>Contact Us</h2>
+  <form action="https://formspree.io/f/mayplrbe" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <div class="contact-info">
+    <p><strong>Phone:</strong> +8801339562577</p>
+    <p><strong>Email:</strong> info@sabgroup-bd.com</p>
+    <p><strong>Address:</strong> Road #2, Plot #44, Panchlaish, Chattogram, Bangladesh</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Basic Crave Pvt. Ltd. | All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
