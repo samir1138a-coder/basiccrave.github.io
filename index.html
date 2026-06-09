@@ -1,75 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Basic Crave Pvt. Ltd.</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Crave Pvt. Ltd. | Sourcing Excellence</title>
+  <link rel="icon" href="./asset/new-logo.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
 </head>
 <body>
 
-<header>
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#whyus">Why Us</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-brand-group">
+        <a href="#home" class="logo">
+          <img src="asset/new-logo.png" alt="Basic Crave" class="nav-logo-img">
+        </a>
+        <div class="nav-brand-text">
+          <div class="nav-brand-title">Basic Crave Pvt. Limited</div>
+          <div class="nav-brand-subtitle">What you <span>NEED</span></div>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#whyus" class="nav-link">Why Us</a></li>
+        <li><a href="#contact" class="nav-link btn-nav">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
   </nav>
-</header>
 
-<section id="home" class="fade-in">
-  <h1>Basic Crave Pvt. Ltd.</h1>
-  <p>Bangladesh-based buying house with a regional hub in Malaysia — making garment sourcing simple, reliable, and transparent.</p>
-  <a href="#contact" class="btn">Get in Touch</a>
-</section>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="bg-image"></div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="container hero-content reveal">
+      <div class="motto-badge">What you <span>NEED</span></div>
+      <h1 class="glitch" data-text="Global Sourcing, Simplified.">Global Sourcing,<br>Simplified.</h1>
+      <p class="subtitle">From development to delivery, we manage every stage of garment sourcing with quality-focused production, transparent communication, and trusted manufacturing networks.</p>
+      <div class="hero-cta">
+        <a href="#services" class="btn nav-link btn-nav">Discover How</a>
+        <a href="#contact" class="btn btn-outline">Say Hello</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
 
-<section id="about" class="fade-in">
-  <h2>About Us</h2>
-  <p>Basic Crave Pvt. Ltd. links global brands to vetted Bangladeshi factories, overseeing production and quality at every stage. With transparent communication and startup-friendly guidance, we turn sourcing challenges into growth opportunities.</p>
-</section>
+  <!-- About Section -->
+  <section id="about" class="about section-padding">
+    <div class="container text-center reveal-up">
+      <span class="section-tag">Who We Are</span>
+      <h2 class="section-title">Shaping the Future of <span>Garment Sourcing</span></h2>
+      <p class="section-desc mx-auto" style="max-width: 800px; margin-bottom: 2rem;">
+        Basic Crave Private Limited is a multinational company and YOUR trusted bridge to simplify and elevate your business. Backed by our affiliated manufacturing partners and in-house team, we provide transparent communication, sourcing, and guidance to turn complex challenges into measurable growth opportunities.
+      </p>
+      
+      <div class="stats justify-center">
+        <div class="stat-item glass-card p-4">
+          <h3 class="counter" data-target="100">0</h3><span>%</span>
+          <p>Transparency</p>
+        </div>
+        <div class="stat-item glass-card p-4">
+          <h3 class="counter" data-target="24">0</h3><span>/7</span>
+          <p>Support</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="services" class="fade-in">
-  <h2>Our Services</h2>
-  <ul>
-    <li>End-to-End Expertise — From fabric sourcing to final shipment</li>
-    <li>Reliable Quality — Strict quality control and vetted manufacturers</li>
-    <li>Transparent Communication — Clear updates, no surprises</li>
-  </ul>
-</section>
+  <!-- Portfolio/Gallery Section -->
+  <section id="portfolio" class="portfolio section-padding pt-0">
+    <div class="container text-center reveal">
+      <span class="section-tag">Our Portfolio</span>
+      <h2 class="section-title">Our <span>Garments</span> Work</h2>
+      <p class="section-desc mb-5">A glimpse into the high-quality apparel we source and produce for global brands.</p>
+    </div>
+    
+    <div class="marquee-wrapper mt-5 reveal-up">
+      <div class="marquee">
+        <div class="marquee-content" id="marquee-content">
+          <!-- Images are dynamically loaded via JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="whyus" class="fade-in">
-  <h2>Why Choose Us</h2>
-  <ul>
-    <li>Startup-Friendly Approach — We help brands scale confidently</li>
-    <li>Global Reach, Local Strength — Offices in Bangladesh & Malaysia</li>
-    <li>Hands-On Production Oversight — Quality and timelines guaranteed</li>
-    <li>Trusted Factory Network — Reliable and compliant partners</li>
-    <li>Clear Communication — Honest insights and proactive solutions</li>
-  </ul>
-</section>
+  <!-- Services Section -->
+  <section id="services" class="services section-padding bg-dark">
+    <div class="container text-center reveal">
+      <span class="section-tag">What We Do</span>
+      <h2 class="section-title">End-to-End <span>Expertise</span></h2>
+      <p class="section-desc">We manage the heavy lifting so you can focus on building your brand.</p>
+    </div>
+    <div class="container grid-3 mt-5">
+      <div class="service-card glass-card reveal-up" style="transition-delay: 0.1s;">
+        <div class="icon-box"><i class="fa-solid fa-truck-fast"></i></div>
+        <h3>Fabric to Shipment</h3>
+        <p>Comprehensive oversight from raw material sourcing up to final container loading. Your supply chain, fully managed.</p>
+      </div>
+      <div class="service-card glass-card reveal-up" style="transition-delay: 0.2s;">
+        <div class="icon-box"><i class="fa-solid fa-check-double"></i></div>
+        <h3>Strict Quality Control</h3>
+        <p>We work exclusively with vetted, compliant manufacturers, ensuring international standards at every production stage.</p>
+      </div>
+      <div class="service-card glass-card reveal-up" style="transition-delay: 0.3s;">
+        <div class="icon-box"><i class="fa-solid fa-comments"></i></div>
+        <h3>Clear Communication</h3>
+        <p>Proactive updates, honest insights, and zero surprises. We believe in total transparency with our partners.</p>
+      </div>
+    </div>
+  </section>
 
-<section id="contact" class="fade-in">
-  <h2>Contact Us</h2>
-<form action="https://formspree.io/f/myznazvl" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-  <div class="contact-info">
-    <p><strong>Phone:</strong> +8801339562577</p>
-    <p><strong>Email:</strong> info@sabgroup-bd.com</p>
-    <p><strong>Address:</strong> Road #2, Plot #44, Panchlaish, Chattogram, Bangladesh</p>
-  </div>
-</section>
+  <!-- Why Us Section -->
+  <section id="whyus" class="whyus section-padding">
+    <div class="container layout-grid reverse">
+      <div class="whyus-text reveal-left">
+        <span class="section-tag">The Advantage</span>
+        <h2>Why Partner With <span>Basic Crave?</span></h2>
+        <ul class="feature-list">
+          <li>
+            <i class="fa-solid fa-comments"></i>
+            <div>
+              <h4>Complete Transparency, Zero Guesswork </h4>
+              <p>We keep communication open and proactive, giving you the confidence to move forward with every decision.</p>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-globe"></i>
+            <div>
+              <h4>Global Reach, Local Strength</h4>
+              <p>Operating with offices in both Bangladesh & Malaysia for optimum coordination.</p>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-handshake"></i>
+            <div>
+              <h4>Trusted Factory Network</h4>
+              <p>Vetted, socially compliant, and highly reliable production partners.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="whyus-visual reveal-right">
+        <div class="circle-graphic">
+          <div class="circle-inner">Quality First</div>
+          <div class="orbit-wrap">
+            <div class="orbit"><i class="fa-solid fa-leaf"></i></div>
+            <div class="orbit"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="orbit"><i class="fa-solid fa-gem"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <p>© 2025 Basic Crave Pvt. Ltd. | All Rights Reserved.</p>
-</footer>
+  <!-- Contact Section -->
+  <section id="contact" class="contact section-padding bg-dark relative">
+    <div class="contact-blobs"></div>
+    <div class="container layout-grid">
+      <div class="contact-info reveal-left">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Ready to <span>Scale?</span></h2>
+        <p>Whether you're an established global brand or a startup, our team is ready to elevate your sourcing strategy. Drop us a message.</p>
+        
+        <div class="info-blocks">
+          <div class="info-item">
+            <i class="fa-solid fa-phone"></i>
+            <p>+880 1890-640275</p>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <p>info@sabgroup-bd.com</p>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Road #2, Plot #44, Panchlaish,<br>Chattogram, Bangladesh</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form-wrapper glass-card reveal-right">
+        <form action="https://formspree.io/f/myznazvl" method="POST" class="contact-form">
+          <div class="input-group">
+            <input type="text" name="name" required placeholder=" ">
+            <label>Your Name</label>
+            <i class="fa-solid fa-user icon"></i>
+          </div>
+          <div class="input-group">
+            <input type="email" name="email" required placeholder=" ">
+            <label>Your Email</label>
+            <i class="fa-solid fa-envelope icon"></i>
+          </div>
+          <div class="input-group">
+            <textarea name="message" rows="4" required placeholder=" "></textarea>
+            <label>Your Message</label>
+            <i class="fa-solid fa-comment-dots icon"></i>
+          </div>
+          <button type="submit" class="btn nav-link btn-nav w-100">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo">
+          <img src="asset/new-logo.png" alt="Basic Crave Logo" class="brand-logo">
+        </a>
+        <p class="footer-motto-text">What You <span>NEED</span></p>
+        <p>Simplifying global sourcing for the modern brand.</p>
+        
+        <div class="sab-concern mt-4">
+          <p class="mb-2">A concern of SAB group</p>
+          <img src="asset/logo2.jpeg" alt="SAB Group Logo" class="sab-logo">
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/company/basic-crave-pvt-ltd/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/share/1Hy6nUg2fP/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/basiccrave?igsh=eHc0ZjJneTUwNHhn&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 Basic Crave Pvt. Limited. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Chat Bubble -->
+  <a href="https://wa.me/8801890640275" class="whatsapp-bubble" target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
 </body>
 </html>
