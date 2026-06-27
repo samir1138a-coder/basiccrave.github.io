@@ -125,16 +125,6 @@ const initMarquee = async () => {
   const marqueeContent = document.getElementById('marquee-content');
   if (!marqueeContent) return;
 
-  const marqueeWrapper = marqueeContent.closest('.marquee-wrapper');
-  const isTouchDevice = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
-
-  if (marqueeWrapper && isTouchDevice) {
-    marqueeWrapper.addEventListener('pointerup', (event) => {
-      if (event.pointerType !== 'touch') return;
-      marqueeWrapper.classList.toggle('is-paused');
-    });
-  }
-
   let imageIndex = 1;
   const validImages = [];
   const maxToTry = 50; // Safeguard so it doesn't loop forever

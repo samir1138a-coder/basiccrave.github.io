@@ -574,21 +574,6 @@ ul {
   animation-play-state: paused;
 }
 
-.marquee-wrapper.is-paused .marquee-content {
-  animation-play-state: paused;
-}
-
-@media (hover: none) and (pointer: coarse) {
-  .marquee-content img:hover,
-  .marquee-content:hover {
-    animation-play-state: running;
-  }
-
-  .marquee-wrapper {
-    cursor: pointer;
-  }
-}
-
 @keyframes scrollMarquee {
   0% { transform: translateX(0); }
   100% { transform: translateX(calc(-50% - 15px)); }
@@ -1076,15 +1061,6 @@ footer {
     gap: 30px;
     text-align: center;
     align-items: center;
-  }
-
-  .sab-concern {
-    align-items: center;
-  }
-
-  .sab-logo {
-    display: block;
-    margin: 0 auto;
   }
 }
 
