@@ -1062,6 +1062,14 @@ footer {
     text-align: center;
     align-items: center;
   }
+  .sab-concern {
+    align-items: center;
+    text-align: center;
+  }
+
+  .sab-logo {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 480px) {
